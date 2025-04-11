@@ -10,7 +10,8 @@ class Pessoa:
         self.altura = 0
         self.imc = 0
         self.meta = ""
-        self.rotina = ""
+        self.tmc = ""
+        self.tmc_real = 0
 
     def __str__(self):
         return f"Nome: {self.nome}\nSexo: {self.sexo}\nIdade: {self.idade}\nPeso: {self.peso} kg\nAltura: {self.altura} m\nIMC: {self.imc:.2f}\nMeta: {self.meta}"
@@ -40,7 +41,7 @@ def validarIdade(idade):
         return idade 
     
 def validarMedidas(medida):
-    medida = medida.strip()  # Remove leading/trailing spaces
+    medida = medida.strip()  
     medidas_invalidas = [0, ""]
 
     try:
@@ -93,7 +94,7 @@ def TMB(pessoa):
     
 # Verificar atividade fisica:
 
-#Sedentário – Pouco ou nenhum exercício diário: Multiplique sua TMB por 1,20;
+# Sedentário – Pouco ou nenhum exercício diário: Multiplique sua TMB por 1,20;
 # Levemente Ativo – (Exercício leve/1 a 3 dias na semana): Multiplique sua TMB por 1,37;
 # Moderadamente Ativo – (Exercício moderado/ 3 a 5 dias na semana): Multiplique sua TMB por 1,55;
 # Bastante Ativo – (Exercício pesado 6 a 7 dias na semana): Multiplique sua TMB por 1,72;
@@ -103,3 +104,22 @@ def rotina(tmb, exe):
     match exe:
         case "Sedentário":
             return tmb * 1.20
+        case "Levemente ativo":
+            return tmb * 1.37
+        case "Moderadamente ativo":
+            return tmb * 1.55
+        case "Bastante ativo":
+            return tmb * 1.72
+        case "Muito ativo":
+            return tmb * 1.90
+        
+def check_num(choice):
+    numbers = ['1', '2', '3', '4', '5']
+    if choice in numbers:
+        return choice
+    else:
+        return None 
+    
+
+
+    

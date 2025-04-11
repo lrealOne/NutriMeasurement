@@ -75,9 +75,28 @@ while True:
             break
     break  
 
-print("Seu imc:", pessoa.imc)
-tmb = TMB(pessoa)
-print(f"Sua taxa metabolica basal (TMB) é de aproximadamente:{tmb:.2f}")
+print(f"Seu imc:{pessoa.imc:.2f}")
+
+print("Certo, estamos quase lá!!\n")
+print("Agora preciso saber com que frequencia voce costuma realizar atividade fisica:")
+freq_atividade = ""
+while True:
+    atividade_fisica = input("1. Sedentário - Pouco ou nenhum exercício diário\n2. Levemente ativo - Exercício leve 1 a 3 dias na semana\n3. Exercício moderado 3 a 5 dias na semana\n4. Exercício pesado 6 a 7 dias na semana\n5. Exercício pesado todos dias da semana ou treinos 2x ao dia")
+    lista_opcoes = ["Sedentário", "Levemente ativo", "Exercício moderado", "Exercício pesado", "Exercício pesado"]
+    teste = check_num(atividade_fisica)
+    if teste is None:
+        print("Opção inválida. Tente novamente") 
+    else:
+        atividade_fisica = int(atividade_fisica) 
+        freq_atividade = lista_opcoes[atividade_fisica - 1]
+        break
+
+pessoa.tmb = TMB(pessoa)
+print(pessoa.tmb)
+tmb_aprox = rotina(pessoa.tmb, freq_atividade)
+pessoa.tmb = tmb_aprox
+print(pessoa.tmb)
+        
 
 print(f"\nCerto {pessoa.nome}! Agora preciso de algumas informações sobre sua alimentação:")
 
@@ -150,5 +169,7 @@ while True:
             print("Certo.")
             break
     break
+
+
 
 
