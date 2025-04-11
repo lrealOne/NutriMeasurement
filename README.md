@@ -36,3 +36,11 @@ So, to nutrition data, I did make the object below:
 
 the object above get the "user taste" for some types of food.
 
+
+So i did create a function that calculate initial basal metabolic rate:
+![image](https://github.com/user-attachments/assets/0e955bb7-2921-4cb8-a63a-c4a5bd7df746)
+
+the next step was make the conversion based on the practice of physical activity:
+![image](https://github.com/user-attachments/assets/465dcbf3-b29a-48ab-bb38-c46db24a0a71)
+
+
