@@ -3,7 +3,7 @@ I started creating an object to get personal info:
 ![image](https://github.com/user-attachments/assets/3e448675-8776-45d1-bdf8-ac8377340c65)
 
 
-i use portuguese language but the information includes name, sex, age, weight, height, body mass index, goal, routine.
+i use portuguese language but the information includes name, sex gender, age, weight, height, body mass index, goal, routine.
 
 
 So, the next step was create a function that calculate the body mass index:
@@ -42,5 +42,47 @@ So i did create a function that calculate initial basal metabolic rate:
 
 the next step was make the conversion based on the practice of physical activity:
 ![image](https://github.com/user-attachments/assets/465dcbf3-b29a-48ab-bb38-c46db24a0a71)
+
+-----------------------------------------------------------------------------------------------
+
+the main code :
+
+get and validate name:
+![image](https://github.com/user-attachments/assets/b5888f7a-41ce-4ed4-bae7-8079ec9023d8)
+
+sex gender and age:
+![image](https://github.com/user-attachments/assets/a3766d73-e762-4c57-a342-eb025208b08d)
+
+get weight and height and calculate the body mass index (PTBR = IMC)
+![image](https://github.com/user-attachments/assets/0a952b20-e58b-482e-b597-268c42befe6f)
+
+get the personal goal (gain or lose weight) and showing the body mass index:
+![image](https://github.com/user-attachments/assets/27a06ae8-1572-445c-b76a-9e5738b3aa12)
+
+
+Now i got some physical activity info:
+![image](https://github.com/user-attachments/assets/445626ad-1199-4b44-bc68-bf753e180276)
+
+
+below, i started to get the "personal taste" informations
+
+vegetables, fruits and beef:
+![image](https://github.com/user-attachments/assets/9a3ee7c5-0e5e-439e-b448-aa21422cedfe)
+
+white meat (chicken, turkey, hen...) and seafood:
+![image](https://github.com/user-attachments/assets/0b2dff5a-c90a-4813-9b92-d206b5b5cc65)
+
+and then, the preferences and unwanted foods
+
+preferences:
+![image](https://github.com/user-attachments/assets/6cf114ac-a772-49d1-8ac8-f0d5c3363f9c)
+
+unwanted:
+![image](https://github.com/user-attachments/assets/fdac5446-b569-4fb3-819c-061ded22c861)
+
+
+
+
+
 
 
